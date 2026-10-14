@@ -1,0 +1,19 @@
+My proposed metric is not realistically implementable in such limited timeline.
+If I had more time, I would have done it.
+I do not like the idea of rating each query by 0 or 1 depending on whether it 
+produces the correct result.
+I propose to evaluate each query by its semantics, not by its result. Additionally,
+I would evaluate it in interval [0; 1] rather than 0 or 1 strictly.
+Then, we simply take the average of each query to evaluate prompt 
+( like we did before ).
+To evaluate semantics of each query, we need a set of "ideal" queries, 
+which we know are true. This is our ground truth.
+Then, we would compare each generated query with reference query by using 
+Jaccard similarity index ( see https://en.wikipedia.org/wiki/Jaccard_index ).
+OF course, some queries need to be preprocessed to produce the most
+exact comparison. For example, when importing the same column:
+FROM x SELECT Y AS y;
+FROM x SELECT Y AS Y;
+using AS naming does not change the semantics, but will decrease similarity.
+We need to delete this custom naming from queries, or adjust it to the 
+reference query, so that naming differently does not create false negatives.

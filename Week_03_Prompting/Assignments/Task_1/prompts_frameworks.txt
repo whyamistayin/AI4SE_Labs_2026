@@ -1,0 +1,57 @@
+APE:
+
+You are a Python developer tasked with creating a concise, well‑documented script.
+Write a Python script that:
+- Imports the `palmerpenguins` dataset (using `seaborn` or `pandas`), prepares the feature matrix and target vector for species classification, splits the data into training and test sets, fits a logistic regression model from scikit‑learn, and prints the test‑set accuracy.
+- Includes clear inline comments explaining each step, uses `StandardScaler` to normalize numeric features, and handles any missing values by dropping rows.
+- Saves the script to a file named **penguin_logreg.py** and ensures it can be run as a standalone program (`if __name__ == "__main__":` block).
+The script should be no longer than 200 words of code (excluding comments) and adhere to PEP 8 style.
+Quality criteria: (1) functional end‑to‑end execution without errors, (2) readable comments for each major operation, (3) printed test accuracy rounded to three decimal places.
+Do not include data visualizations or additional modeling techniques.
+Write this for Beginners with no background in the topic. Match the depth, vocabulary and examples to that reader.
+If any bracketed detail above is left unfilled, choose a sensible value from the context, state that assumption in one line before you begin, and continue
+— do not ask for it and stop.
+
+STAR:
+
+You are a Python data‑science developer.
+Your task is to write a concise, executable script that loads the **palmerpenguins** dataset, preprocesses it as needed, and fits a logistic regression model to predict the penguin species.
+The script should:
+- Import the dataset directly from the `palmerpenguins` package (or from a CSV if the package is unavailable).
+- Perform any required cleaning (e.g., handling missing values, encoding the target variable).
+- Split the data into training and test sets (70 % train, 30 % test).
+- Fit a logistic regression model using scikit‑learn.
+- Output the model’s accuracy on the test set and display a brief classification report.
+Deliver the code in a single Python code block, followed by a short (≤ 80 words) explanation of how to run the script and interpret the results.
+Quality criteria:
+
+1. The script runs without errors on a standard Python 3.10 environment with `pandas`, `scikit-learn`, and `palmerpenguins` installed.
+2. All steps are clearly commented for readability.
+3. The explanation mentions any assumptions made (e.g., handling of missing values) and suggests how to adapt the script for different target variables.
+
+Exclude any unrelated data‑visualisation code or hyper‑parameter tuning beyond the default settings.
+Write this for Beginners with no background in the topic. Match the depth, vocabulary and examples to that reader.
+
+GENERAL:
+You are a Python data‑science developer.
+Your task is to write a self‑contained Python script that:
+
+1. Imports the **palmerpenguins** dataset (using the `palmerpenguins` package or loading it from a CSV file).
+2. Performs any necessary preprocessing (e.g., handling missing values, encoding the target variable).
+3. Fits a **logistic regression** model to predict the penguin species from the available numeric features.
+4. Prints a concise summary of the model, including the classification report and accuracy score.
+5. Saves the trained model to a file named `penguin_logreg.pkl` using `joblib` (or similar).
+
+The script should run end‑to‑end when executed in a standard Python 3 environment with common data‑science libraries installed.
+
+**Output format**: Provide the complete script inside a single markdown code block (no additional explanation). The script must be ≤ 200 lines and include inline comments explaining each major step.
+
+**Quality criteria**
+- The code is syntactically correct and follows PEP 8 style conventions.
+- All required libraries are imported at the top; any optional dependencies are guarded with try/except and a helpful error message.
+- The script handles missing data gracefully (e.g., by dropping rows or imputing) and encodes the target variable appropriately for logistic regression.
+
+**Boundary**: Do not include data visualisation, hyper‑parameter tuning, or cross‑validation; focus solely on loading the data, basic preprocessing, fitting a single logistic regression, and reporting basic metrics.
+Write this for Beginners with no background in the topic. Match the depth, vocabulary and examples to that reader.
+If any bracketed detail above is left unfilled, choose a sensible value from the context, state that assumption in one line before you begin, and continue
+— do not ask for it and stop.

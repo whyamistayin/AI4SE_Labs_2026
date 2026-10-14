@@ -1,0 +1,19 @@
+GENERAL and STAR framworks were not successfull at all.
+The test crashed with message:
+
+File "evaluate_retrieval_predictions.py", line 128, in main
+    raise RuntimeError(
+    ...<2 lines>...
+    ) from error
+RuntimeError: Could not execute predicted SQL on line 2 of restaurants_dataset_predictions.csv
+
+I am not sure how to evaluate it, but let it be 0%. 
+Because it failed to generate correct syntax.
+APE was 27% correct.
+Honestly, I expected APE to be the best. Because it is minimalistic,
+but precise. Action, Purpose and Expectation is exactly the style
+we want to use when explaining technical details.
+I dont have much to say about GENERAL.
+STAR is the worst for technical details. STAR structures an account of
+something you did. But when you need something done,
+it is not the best choice.

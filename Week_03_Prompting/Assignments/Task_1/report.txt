@@ -1,0 +1,5 @@
+I found all frameworks on https://frompting.com/frameworks.
+I choosed GENERAL, because I think it is a great reference.
+I choosed APE because it is said it gives clear instructions.
+I choosed STAR, because it is from different category. And I thought
+it would not be great for explaining technical details.
