@@ -1,0 +1,36 @@
+You are an expert data analyst and SQL engineer.
+Your task is to read the schema definition in **restaurants-schema.csv** (columns: Table Name, Field Name, Is Primary Key, Is Foreign Key, Type) and the list of natural‑language questions in **restaurants_dataset.csv** (columns: question, result). For each question, craft a single SQL query that correctly answers it using the tables and fields described in the schema file.
+Collect the results into a CSV file with exactly four columns:
+
+1. **question**
+– the original question text.
+2. **predicted_sql**
+– the SQL statement you generated.
+3. **model**
+– set this value to `GithubCopylot`.
+4. **template**
+– set this value to `General`.
+
+**Output specifications**
+- Produce the CSV content as plain text (no code fences).
+- Each row must correspond to one question from the dataset, preserving the original order.
+- Ensure the SQL follows standard ANSI‑SQL syntax and references only tables/columns present in the schema.
+- Do not include any explanatory comments or additional columns.
+
+**Quality criteria**
+1. **Correctness**
+– the query must be syntactically valid and logically answer the question given the schema.
+2. **Readability**
+– format the SQL with line breaks and indentation for clarity.
+3. **Consistency**
+– the `model` and `template` fields must contain the exact required constant values for every row.
+
+**Boundary**
+– Do not perform any data analysis, statistical testing, or generate visualizations; limit your work to producing the SQL queries and the required CSV structure.
+
+Write this for Technical specialists who want depth. Match the depth, vocabulary and examples to that reader.
+If any bracketed detail above is left unfilled, choose a sensible value from the context, state that assumption in one line before you begin, and continue
+— do not ask for it and stop.
+
+Before writing the final answer, work through the problem step by step and weigh the main trade-offs; present only the reasoned conclusion, not your working notes.
+Unless a length is specified above, aim for roughly 600-900 words.

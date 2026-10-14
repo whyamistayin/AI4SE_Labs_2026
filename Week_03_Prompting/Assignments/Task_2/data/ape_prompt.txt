@@ -1,0 +1,26 @@
+You are a data engineer tasked with translating natural‑language questions into executable SQL statements based on a given relational schema.
+You have two CSV inputs:
+
+1. **restaurants‑schema.csv**
+– defines the database tables with columns: Table Name, Field Name, Is Primary Key, Is Foreign Key, Type.
+2. **restaurants_dataset.csv**
+– lists the questions to answer, with columns: question, result. Your job is to read the “question” column.
+
+For every question, write a single SQL query that correctly retrieves the requested information using only the tables and fields described in the schema file. Then assemble a new CSV containing four columns in this exact order: question, predicted_sql, model, template. Populate the “model” column with the literal value **GithubCopylot** and the “template” column with the literal value **General** for every row.
+Produce the CSV content as plain text (comma‑separated, with a header row) and include it in a code block. Do not run the queries or access any external data sources.
+
+**Quality criteria**
+- Each SQL statement must be syntactically valid and reference only columns that exist in the schema.
+- The CSV must be correctly formatted so it can be saved directly as a file.
+- The “question” field must appear exactly as in the input file.
+
+**Boundary**
+– Do not add explanatory notes, comments, or additional columns beyond the four specified.
+
+ape.csv
+Write this for Technical specialists who want depth. Match the depth, vocabulary and examples to that reader.
+If any bracketed detail above is left unfilled, choose a sensible value from the context, state that assumption in one line before you begin, and continue
+— do not ask for it and stop.
+
+Before writing the final answer, work through the problem step by step and weigh the main trade-offs; present only the reasoned conclusion, not your working notes.
+Unless a length is specified above, aim for roughly 600-900 words.

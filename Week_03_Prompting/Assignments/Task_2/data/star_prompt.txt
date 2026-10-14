@@ -1,0 +1,16 @@
+You are an AI assistant tasked with converting natural‑language questions into SQL statements based on a provided database schema.
+The schema file **restaurants‑schema.csv** lists each table with its fields, primary‑key flag, foreign‑key flag, and data type. The question file **restaurants_dataset.csv** contains rows with a *question* column and an expected *result* column. Your job is to read every question, interpret its intent, and write a correct SQL query that would retrieve the requested information from the tables described in the schema.
+Create a new CSV file with exactly four columns in this order: **question**, **predicted_sql**, **model**, **template**. For each input question, output the original question text, the SQL query you generated, the literal string “GithubCopylot” for the *model* column, and the literal string “General” for the *template* column. Use a comma as the delimiter and enclose fields in double quotes only when necessary to preserve commas inside a query.
+The resulting file must be saved to **star.csv**. Ensure the file is encoded in **UTF‑8**.
+
+**Quality criteria**
+1. Each SQL query must be syntactically correct for standard ANSI SQL and reference only tables/columns defined in the schema file.
+2. Queries should directly answer the question without unnecessary joins or sub‑queries, but may include them when required for correctness.
+3. The CSV must contain one row per question, with no extra header rows beyond the column names.
+
+Write this for Technical specialists who want depth. Match the depth, vocabulary and examples to that reader.
+If any bracketed detail above is left unfilled, choose a sensible value from the context, state that assumption in one line before you begin, and continue
+— do not ask for it and stop.
+
+Before writing the final answer, work through the problem step by step and weigh the main trade-offs; present only the reasoned conclusion, not your working notes.
+Unless a length is specified above, aim for roughly 600-900 words.
