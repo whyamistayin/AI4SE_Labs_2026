@@ -1,0 +1,10 @@
+Agent definitely performed tasks better than without a skill.
+Surprisingly, the agent elaborated more on testing approaches,
+pros and cons of each approach. It even printed a small readable
+table inside prompt window explaining different architecture choices
+and their trade-offs. The agent surely obtained more clarity in terms of
+challenges of making a decision. I noticed way more consideration of 
+unresolved and unspecified details, which improves quality of decisions
+dramatically.
+
+The skill is at AI4SE_Labs_2026/.github/skills
