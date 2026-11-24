@@ -1,0 +1,6 @@
+I use GitHub Copilot/Copilot SDK in VS Code.
+Its internal system prompt is not exposed for inspection or
+direct editing. However, equivalent customization is available
+through repository instruction files such
+as .github/copilot-instructions.md and AGENTS.md,
+plus VS Code Copilot settings.

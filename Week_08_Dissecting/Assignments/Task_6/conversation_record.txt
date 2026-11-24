@@ -1,0 +1,48 @@
+WEEK 8 - TASK 6 CONVERSATION RECORD
+==================================
+
+Note: This is a readable summary of the conversation, not a verbatim export.
+
+User:
+Analyse the working directory using subagents.
+
+Assistant:
+Reviewed the repository instructions and README, checked the Git worktree,
+then delegated read-only reviews of four independent coursework areas:
+
+- Week 3: prompting assignments and evaluation artifacts.
+- Weeks 4-5: requirements workflow, tests, architecture notes, and ADR.
+- Week 6: implementation assignments and the RAG pipeline.
+- Week 8: dissecting assignments, with particular attention to Task 6.
+
+Subagent findings:
+
+- Week 3 has useful prompting and SQL-evaluation artifacts, but some
+  deliverables are incomplete. In particular, Task 1's prompt examples do
+  not match the restaurant-SQL evaluation, and later tasks lack requested
+  metrics or comparative analysis.
+- Week 4 has a structured requirements workflow and focused tests. The
+  generated requirements output has some priority-label inconsistencies.
+- Week 5 documents architecture alternatives and a detailed Teamify ADR,
+  including trade-offs and operational concerns.
+- Week 6 has a coherent chunking-to-RAG pipeline and substantial tests, but
+  its bonus assignment has no completed design report.
+- Week 8's Task 6 asks for a textual record of the coding-agent conversation.
+  Several other artifact-heavy tasks also appear to lack submissions.
+
+Repository-level observation:
+
+The worktree already contained untracked files and modifications. The Week 6
+playground is tracked as a Git submodule/gitlink, but the repository has no
+.gitmodules mapping for it; consequently, `git submodule status` fails for
+that path. No files were changed during the initial analysis; this
+conversation record was created afterward.
+
+User:
+How to save this chat in a readable way?
+
+Assistant:
+Saved this structured conversation summary in this file. For a readable
+record, use plain text with a title, speaker labels, a short account of the
+work performed, and the main findings. This file is a summary rather than a
+verbatim chat export.
